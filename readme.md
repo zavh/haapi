@@ -3,7 +3,7 @@ LARAVEL API
 Laravel Backend for Home Automation system.
 ---
 
-This backend  provides API for Web, Andorid and iOS front ends which are all made with React Native.
+This backend  provides API for Web, Andorid and iOS front ends which are all made with React & React Native. Front-end packages are kept in a separate repo. 
 
 **Development notes**
 
