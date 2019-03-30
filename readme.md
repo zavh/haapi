@@ -9,6 +9,6 @@ This backend  provides API for Web, Andorid and iOS front ends which are all mad
 
 • Send Events to clients (Server Sent Event capabilities)
 
-• JWT Implementation. Instead of Laravel's CSRF, JSON Web Token has been used for Authentication
+• JWT Implementation. Instead of Laravel's CSRF, JSON Web Token has been used for Authentication. Followed the backend installation part from: https://medium.com/@Gbxnga/token-based-authentication-with-react-and-laravel-restful-api-83f16581e85
 
-• CORS Implemented
+• CORS Implemented from https://github.com/barryvdh/laravel-cors
