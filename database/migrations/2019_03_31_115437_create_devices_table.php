@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStatisticsTable extends Migration
+class CreateDevicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreateStatisticsTable extends Migration
      */
     public function up()
     {
-        Schema::create('statistics', function (Blueprint $table) {
+        Schema::create('devices', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->dateTime('record_time');
-            $table->string('device_id', 6,2);
-            $table->float('voltage', 6,2);
-            $table->float('current', 6,2);
-            $table->float('power', 6,2);
-            $table->float('temperature', 6,2);
+            $table->integer('pi_id');
+            $table->string('room_name')->nullable();
+            $table->string('device_id');
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreateStatisticsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('statistics');
+        Schema::dropIfExists('devices');
     }
 }

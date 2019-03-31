@@ -29,4 +29,8 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+
+    public function pi(){
+        return $this->hasOne('App\Pi');
+    }
 }
