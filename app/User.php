@@ -31,6 +31,6 @@ class User extends Authenticatable implements JWTSubject
     }
 
     public function pi(){
-        return $this->hasOne('App\Pi');
+        return $this->hasMany('App\Pi');
     }
 }

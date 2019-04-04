@@ -16,6 +16,7 @@ class CreatePisTable extends Migration
         Schema::create('pis', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
+            $table->string('pi_id');
             $table->timestamps();
         });
     }
